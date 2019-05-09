@@ -1,0 +1,478 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 18.01.2013 15:44:55
+
+newmtl street
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.1260 0.1260 0.1260
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\street_diffuse.jpg
+	map_Kd tex\street_diffuse.jpg
+	map_Ks tex\street_specular.jpg
+	map_Ke tex\street_illumination.jpg
+
+newmtl sidewalk4
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0900 0.0900 0.0900
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\street_layout_04_diffuse.jpg
+	map_Kd tex\street_layout_04_diffuse.jpg
+	map_Ks tex\street_layout_04_specular.jpg
+	map_Ke tex\street_sidewalk_illumination.jpg
+
+newmtl street_props_glass
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.6660 0.6660 0.6660
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\street_props_diffuse.jpg
+	map_Kd tex\street_props_diffuse.jpg
+	map_Ks tex\street_props_specular.jpg
+	map_Ke tex\street_props_ilumination.jpg
+
+newmtl street_props
+	Ns 15.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.9090 0.9090 0.9090
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\street_props_diffuse.jpg
+	map_Kd tex\street_props_diffuse.jpg
+	map_Ks tex\street_props_specular.jpg
+	map_Ke tex\street_props_ilumination.jpg
+
+newmtl _edge_02_quads_Newedge_02
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.6840 0.6840 0.6840
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\edge_07_diffuse.jpg
+	map_Kd tex\edge_07_diffuse.jpg
+	map_Ks tex\edge_07_specular.jpg
+
+newmtl Edge_06
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.6840 0.6840 0.6840
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\edge_06_diffuse.jpg
+	map_Kd tex\edge_06_diffuse.jpg
+	map_Ks tex\edge_06_specular.jpg
+
+newmtl edge_05a
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.6840 0.6840 0.6840
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\edge_05_diffuse.jpg
+	map_Kd tex\edge_05_diffuse.jpg
+	map_Ks tex\edge_05_specular.jpg
+
+newmtl Edge_04
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.6840 0.6840 0.6840
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\edge_04_diffuse.jpg
+	map_Kd tex\edge_04_diffuse.jpg
+	map_Ks tex\edge_04_specular.jpg
+
+newmtl Edge_03
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.6840 0.6840 0.6840
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\edge_03_diffuse.jpg
+	map_Kd tex\edge_03_diffuse.jpg
+	map_Ks tex\edge_03_specular.jpg
+
+newmtl edge_02a
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.6840 0.6840 0.6840
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\edge_02_diffuse.jpg
+	map_Kd tex\edge_02_diffuse.jpg
+	map_Ks tex\edge_02_specular.jpg
+
+newmtl edge_01
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\edge_01_diffuse.jpg
+	map_Kd tex\edge_01_diffuse.jpg
+	map_Ks tex\edge_01_specular.jpg
+	map_Ke tex\edge_01_illumination.jpg
+	map_bump -bm 0.3000 tex\edge_01_normal.jpg
+	bump -bm 0.3000 tex\edge_01_normal.jpg
+	map_refl tex\edge_01_reflection.jpg
+
+newmtl 01___Default
+	Ns 30.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.8370 0.8370 0.8370
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\skyscraper_05_diffuse.jpg
+	map_Kd tex\skyscraper_05_diffuse.jpg
+	map_Ks tex\skyscraper_05_specular.jpg
+	map_bump -bm 0.3000 tex\skyscraper_05_normal.jpg
+	bump -bm 0.3000 tex\skyscraper_05_normal.jpg
+
+newmtl roof2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\roof_02_diffuse.jpg
+	map_Kd tex\roof_02_diffuse.jpg
+	map_Ks tex\roof_02_specular.jpg
+	map_Ke tex\roof_02_illumination.jpg
+	map_bump -bm 0.3000 tex\roof_02_normal.jpg
+	bump -bm 0.3000 tex\roof_02_normal.jpg
+
+newmtl roof_props
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.7380 0.7380 0.7380
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\roof_props_diffuse.jpg
+	map_Kd tex\roof_props_diffuse.jpg
+	map_Ks tex\roof_props_specular.jpg
+	map_Ke tex\roof_props_ilumination.jpg
+
+newmtl skyscraper_06
+	Ns 27.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.8190 0.8190 0.8190
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\skyscraper_06_diffuse.jpg
+	map_Kd tex\skyscraper_06_diffuse.jpg
+	map_Ks tex\skyscraper_06_specular.jpg
+
+newmtl Newskyscraper03
+	Ns 29.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.9647 0.5882 0.8471
+	Kd 0.9647 0.5882 0.8471
+	Ks 0.4590 0.4590 0.4590
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\skyscraper_03_diffuse.jpg
+	map_Kd tex\skyscraper_03_diffuse.jpg
+	map_Ks tex\skyscraper_03_specular.jpg
+
+newmtl roof_lamp
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\roof_lamp_diffuse.jpg
+	map_Kd tex\roof_lamp_diffuse.jpg
+	map_Ks tex\roof_lamp_specular.jpg
+	map_Ke tex\roof_lamp_illumination.jpg
+
+newmtl satelite2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\sat_02_diffuse.jpg
+	map_Kd tex\sat_02_diffuse.jpg
+	map_Ks tex\sat_02_specular.jpg
+	map_Ke tex\sat_02_illumination.jpg
+
+newmtl satelite1
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\sat_01_diffuse.jpg
+	map_Kd tex\sat_01_diffuse.jpg
+	map_Ks tex\sat_01_specular.jpg
+	map_Ke tex\sat_01_illumination.jpg
+	map_refl tex\sat_01_reflection.jpg
+
+newmtl double_antena
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\double_antenne_diffuse.jpg
+	map_Kd tex\double_antenne_diffuse.jpg
+	map_Ks tex\double_antenne_specular.jpg
+	map_Ke tex\double_antenne_illumination.jpg
+
+newmtl single_antena
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\simple_antenne_diffusion.jpg
+	map_Kd tex\simple_antenne_diffusion.jpg
+	map_Ks tex\simple_antenne_specular.jpg
+	map_Ke tex\simple_antenne_illumination.jpg
+
+newmtl _building_07_quads_building
+	Ns 15.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.8190 0.8190 0.8190
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\building_07_diffuse.jpg
+	map_Kd tex\building_07_diffuse.jpg
+	map_Ks tex\building_07_specular.jpg
+
+newmtl _building_02_quads_building
+	Ns 18.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7725 0.5882 0.8784
+	Kd 0.7725 0.5882 0.8784
+	Ks 0.7470 0.7470 0.7470
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\building_02_diffuse.jpg
+	map_Kd tex\building_02_diffuse.jpg
+	map_Ks tex\building_02_specular.jpg
+	map_Ke tex\building_02_illumination.jpg
+
+newmtl _building_02_quads_roof
+	Ns 18.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.8000 0.5882 0.5882
+	Ks 0.7920 0.7920 0.7920
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\roof_01_diffuse.jpg
+	map_Kd tex\roof_01_diffuse.jpg
+	map_Ks tex\roof_01_specular.jpg
+	map_Ke tex\roof_01_illumination.jpg
+
+newmtl _building_02_quads_roof2
+	Ns 22.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.6353 0.9882 0.5882
+	Ks 0.8370 0.8370 0.8370
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\roof_props_diffuse.jpg
+	map_Kd tex\roof_props_diffuse.jpg
+	map_Ks tex\roof_props_specular.jpg
+	map_Ke tex\roof_props_ilumination.jpg
+
+newmtl _building_04_quads_building
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.7560 0.7560 0.7560
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\building_04_diffuse.jpg
+	map_Kd tex\building_04_diffuse.jpg
+	map_Ks tex\building_04_specular.jpg
+	map_Ke tex\building_04_illumination.jpg
+
+newmtl _building_04_quads_roof
+	Ns 5.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.8100 0.8100 0.8100
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\roof_02_diffuse.jpg
+	map_Kd tex\roof_02_diffuse.jpg
+	map_Ks tex\roof_02_specular.jpg
+	map_Ke tex\roof_02_illumination.jpg
+
+newmtl _building_04_quads_roof2
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7255 0.7882 0.5882
+	Kd 0.7255 0.7882 0.5882
+	Ks 0.7560 0.7560 0.7560
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\roof_props_diffuse.jpg
+	map_Kd tex\roof_props_diffuse.jpg
+	map_Ks tex\roof_props_specular.jpg
+	map_Ke tex\roof_props_ilumination.jpg
+
+newmtl _skyscraper_04_quads_01___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.6750 0.6750 0.6750
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\skyscraper_04_diffuse.jpg
+	map_Kd tex\skyscraper_04_diffuse.jpg
+	map_Ks tex\skyscraper_04_specular.jpg
+
+newmtl _skyscraper_04_quads_03___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 0.5882 0.5882
+	Kd 1.0000 0.5882 0.5882
+	Ks 0.7110 0.7110 0.7110
+	Ke 0.0000 0.0000 0.0000
+	map_Ka tex\roof_01_diffuse.jpg
+	map_Kd tex\roof_01_diffuse.jpg
+	map_Ks tex\roof_01_specular.jpg
