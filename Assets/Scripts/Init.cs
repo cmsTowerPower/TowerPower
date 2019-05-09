@@ -13,6 +13,7 @@ public class Init : MonoBehaviour
     // Put PlayerPrefs that could destroy the game here
     // (in case that the game crashed and nothing was reset)
     void resetPlayerPrefs() {
-        
+        PlayerPrefs.SetInt("readyToSink", 0);
+        PlayerPrefs.SetFloat("newObjectHeight", 0);
     }
 }
