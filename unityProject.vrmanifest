@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.towerpower.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\projects\\TowerPower\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "TowerPower [Testing]"
+        }
+      }
+    }
+  ]
+}
