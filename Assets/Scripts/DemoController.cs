@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class DemoController : MonoBehaviour {
     void Awake() {
-        PlayerPrefs.SetInt("readyToSpawn", 1);
+        PlayerPrefs.SetInt("spawnSliders", 1);
     }
 }

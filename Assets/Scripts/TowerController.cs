@@ -8,12 +8,12 @@ public class TowerController : MonoBehaviour
     private int counter = 0;
 
     void Update() {
-        if (PlayerPrefs.GetInt("readyToSink") == 1) {
-            sinkHeight = PlayerPrefs.GetFloat("newObjectHeight");
+        if (PlayerPrefs.GetInt("lowerTower") == 1) {
+            sinkHeight = PlayerPrefs.GetFloat("newTowerHeight");
             transform.position -= new Vector3(0, sinkHeight/sinkRate, 0);
             counter++;
             if (counter >= sinkRate) {
-                PlayerPrefs.SetInt("readyToSink", 0);
+                PlayerPrefs.SetInt("lowerTower", 0);
                 counter = 0;
             }
         }
