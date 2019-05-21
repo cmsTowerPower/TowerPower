@@ -13,12 +13,10 @@ public class WorkBenchController : MonoBehaviour
     }
 
     void Update() {
-        if (PlayerPrefs.GetInt("readyToSpawn") == 1) spawn();
-    }
-
-    void spawn() {
-        GameObject obj = objects[Random.Range(0, objects.Count)].gameObject;
-        Instantiate(obj, spawnPoint.transform.position, Quaternion.identity, spawnPoint.transform);
-        PlayerPrefs.SetInt("readyToSpawn", 0);
+        if (PlayerPrefs.GetInt("spawnPiece") == 1) {
+            GameObject obj = objects[Random.Range(0, objects.Count)].gameObject;
+            Instantiate(obj, spawnPoint.transform.position, Quaternion.identity, spawnPoint.transform);
+            PlayerPrefs.SetInt("spawnPiece", 0);
+        }
     }
 }

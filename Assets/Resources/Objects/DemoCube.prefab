@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5760551727908970891}
   - component: {fileID: 3490526835088227460}
   - component: {fileID: 1551726218982997219}
+  - component: {fileID: 7101458671699441191}
   m_Layer: 0
   m_Name: DemoCube
   m_TagString: TowerPiece
@@ -139,3 +140,15 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
+--- !u!114 &7101458671699441191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3037723561657836710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb6254880aad2549976f43372e466c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
