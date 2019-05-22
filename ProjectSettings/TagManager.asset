@@ -8,6 +8,8 @@ TagManager:
   - XSlider
   - YSlider
   - ZSlider
+  - Sliders
+  - Doom
   layers:
   - Default
   - TransparentFX
