@@ -7,12 +7,10 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class Init : MonoBehaviour
 {
-    public string nextScene;
-
     void Awake() {
         resetPlayerPrefs();
         configTowerPieces();
-        SceneManager.LoadScene(nextScene);
+        SceneManager.LoadScene(PlayerPrefs.GetString("mainSceneName"));
     }
 
     // Put PlayerPrefs that could destroy the game here
@@ -21,6 +19,8 @@ public class Init : MonoBehaviour
         PlayerPrefs.SetInt("spawnSliders", 0);
         PlayerPrefs.SetInt("spawnPiece", 0);
         PlayerPrefs.SetInt("lowerTower", 0);
+        PlayerPrefs.SetInt("playerScore", 0);
+        PlayerPrefs.SetInt("points", 0);
         PlayerPrefs.SetFloat("currentTowerHeight", 0);
         PlayerPrefs.SetFloat("heightDifference", 0);
     }
@@ -30,5 +30,7 @@ public class Init : MonoBehaviour
         PlayerPrefs.SetFloat("pieceBaseX", 3);
         PlayerPrefs.SetFloat("pieceBaseY", 3);
         PlayerPrefs.SetFloat("pieceBaseZ", 3);
+        PlayerPrefs.SetString("mainSceneName", "LeapDemo");
+        PlayerPrefs.SetString("gameOverSceneName", "GameOver");
     }
 }
