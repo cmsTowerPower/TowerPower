@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>
 /// This script handles the core mechanic of the game.
@@ -13,7 +11,7 @@ public class PieceController : MonoBehaviour
 {
     private GameObject xReference, yReference, zReference, sliders;
 
-    private float xBase, xSlidePos, yBase, ySlidePos, zBase, zSlidePos;
+    private float xBase, xSliderBonus, yBase, ySliderBonus, zBase, zSliderBonus;
 
     void Start() {
         xReference = GameObject.FindGameObjectWithTag("XSlider");
@@ -27,27 +25,37 @@ public class PieceController : MonoBehaviour
     }
 
     void Update() {
-        xSlidePos = xReference.transform.position.x;
-        ySlidePos = yReference.transform.position.x;
-        zSlidePos = zReference.transform.position.x;
+        // 0.3947823 is the default value, so the reference value needs to be reduced by that value
+        // sliders also work reversed, so the difference needs to be made negative
+        // since the outcoming value is 0.2 at max, it's amplified by 100 to actually make an impact
+        xSliderBonus = -(xReference.transform.position.x - 0.3947823f) * 100;
+        ySliderBonus = -(yReference.transform.position.x - 0.3947823f) * 100;
+        zSliderBonus = -(zReference.transform.position.x - 0.3947823f) * 100;
 
-        this.gameObject.transform.localScale = new Vector3(xBase + xSlidePos, yBase + ySlidePos, zBase + zSlidePos);
-
-        // TODO - fix this / find better solution. Sliders are immediately destroyed.
-        if (transform.position.y > 0) Destroy(sliders);
+        this.gameObject.transform.localScale = new Vector3(xBase + xSliderBonus, yBase + ySliderBonus, zBase + zSliderBonus);
     }
 
     void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.tag == "TowerPiece") {
-            // is Tower higher? if so, calculate height difference and set enable "lowerTower"
+        if (collision.gameObject.tag == "Tower") {
+            // is Tower higher? if so, give points, calculate height difference and enable "lowerTower"
             if (transform.position.y > PlayerPrefs.GetFloat("currentTowerHeight")) {
+                PlayerPrefs.SetInt("points", PlayerPrefs.GetInt("points") + 10);
                 PlayerPrefs.SetFloat("heightDifference", transform.position.y - PlayerPrefs.GetFloat("currentTowerHeight"));
                 PlayerPrefs.SetInt("lowerTower", 1);
             }
-            // spawn next object
-            PlayerPrefs.SetInt("spawnSliders", 1);
-            Destroy(this);
+            PlayerPrefs.SetInt("playerScore", PlayerPrefs.GetInt("playerScore") + PlayerPrefs.GetInt("points"));
+            this.gameObject.tag = "Tower";
+            prepareNext();
         }
-        if (collision.gameObject.tag == "Doom") PlayerPrefs.SetInt("playerLives", PlayerPrefs.GetInt("playerLives") - 1);
+        if (collision.gameObject.tag == "Doom") {
+            PlayerPrefs.SetInt("playerLives", PlayerPrefs.GetInt("playerLives") - 1);
+            prepareNext();
+        }
+    }
+
+    void prepareNext() {
+        Destroy(sliders);
+        PlayerPrefs.SetInt("spawnSliders", 1);
+        Destroy(this);
     }
 }
